@@ -1,8 +1,10 @@
 package com.aristech.simplereddit;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.Observer;
+import androidx.lifecycle.ViewModel;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.paging.PagedList;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -26,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
 	super.onCreate(savedInstanceState);
 	getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 	setContentView(R.layout.activity_main);
+	getSupportActionBar().setTitle("r/all/top");
 	intent = getIntent();
   }
 
@@ -33,12 +36,22 @@ public class MainActivity extends AppCompatActivity {
   protected void onResume() {
 	super.onResume();
 
+	final String accessToken = intent.getStringExtra("accessToken");
+
 	// UI Code
 	recyclerView = findViewById(R.id.recyclerView);
 	recyclerView.setLayoutManager(new LinearLayoutManager(this));
 	recyclerView.setHasFixedSize(true);
 
-	ItemViewModel itemViewModel = new ViewModelProvider(this).get(ItemViewModel.class);
+	ViewModelProvider.Factory factory = new ViewModelProvider.Factory() {
+	  @NonNull
+	  @Override
+	  public <T extends ViewModel> T create(@NonNull Class<T> modelClass) {
+		return (T) new ItemViewModel(accessToken);
+	  }
+	};
+
+	ItemViewModel itemViewModel = new ViewModelProvider(this, factory).get(ItemViewModel.class);
 	final RedditItemAdapter redditItemAdapter = new RedditItemAdapter(this);
 
 	itemViewModel.itemPagedList.observe(this, new Observer<PagedList<ChildrenItem>>() {
@@ -49,8 +62,6 @@ public class MainActivity extends AppCompatActivity {
 	});
 
 	recyclerView.setAdapter(redditItemAdapter);
-
-	System.out.println(intent.getStringExtra("accessToken"));
   }
 
 }

@@ -11,9 +11,7 @@ import retrofit2.Response;
 
 public class ItemDataSource extends PageKeyedDataSource<String, ChildrenItem> {
 
-  public static final int PAGE_SIZE = 5;
-  private static final int FIRST_PAGE = 1;
-  private static final String SITE_NAME = "reddit";
+  public static final int PAGE_SIZE = 7;
   private String auth;
 
   public ItemDataSource(String auth) {

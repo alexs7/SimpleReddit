@@ -13,9 +13,9 @@ public class ItemViewModel extends ViewModel {
   public LiveData<PagedList<ChildrenItem>> itemPagedList;
   public LiveData<PageKeyedDataSource<String, ChildrenItem>> liveDataSource;
 
-  public ItemViewModel(){
-    // TODO: READ HERE
-	ItemDataSourceFactory itemDataSourceFactory = new ItemDataSourceFactory(" Bearer FIND A WAY TO PASS THIS DYNAMICALLY");
+  public ItemViewModel(String accessToken){
+    String bearer = "Bearer " + accessToken;
+	ItemDataSourceFactory itemDataSourceFactory = new ItemDataSourceFactory(bearer);
 	liveDataSource = itemDataSourceFactory.getItemLiveDataSource();
 
 	PagedList.Config config = (new PagedList.Config.Builder())
