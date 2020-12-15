@@ -7,45 +7,33 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.paging.PagedList;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Base64;
 import android.util.Log;
-
+import android.view.WindowManager;
 import com.aristech.simplereddit.pojo.ChildrenItem;
 
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.io.IOException;
-
-import okhttp3.Call;
-import okhttp3.Callback;
-import okhttp3.MediaType;
-import okhttp3.OkHttpClient;
-import okhttp3.Request;
-import okhttp3.RequestBody;
-import okhttp3.Response;
 
 public class MainActivity extends AppCompatActivity {
 
   private RecyclerView recyclerView = null;
-  private String accessToken = null;
-  private static final String USERNAME = "xRr9te3xZbvHLg";
-  private static final String PASSWORD = "";
-  private static final String CLIENT_ID = USERNAME + ":" + PASSWORD;
-  private static final String AUTHURL = "https://www.reddit.com/api/v1/access_token";
-  private static final String TAG = "OAuthCall";
+  private Intent intent = null;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
 	super.onCreate(savedInstanceState);
+	getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 	setContentView(R.layout.activity_main);
+	intent = getIntent();
   }
 
   @Override
   protected void onResume() {
 	super.onResume();
 
+	// UI Code
 	recyclerView = findViewById(R.id.recyclerView);
 	recyclerView.setLayoutManager(new LinearLayoutManager(this));
 	recyclerView.setHasFixedSize(true);
@@ -62,42 +50,7 @@ public class MainActivity extends AppCompatActivity {
 
 	recyclerView.setAdapter(redditItemAdapter);
 
-	final OkHttpClient client = new OkHttpClient();
-	String encodedAuthString = Base64.encodeToString(CLIENT_ID.getBytes(), Base64.NO_WRAP);
-
-	MediaType mediaType = MediaType.parse("application/x-www-form-urlencoded");
-	RequestBody body = RequestBody.create(mediaType, "grant_type=https%3A%2F%2Foauth.reddit.com%2Fgrants%2Finstalled_client&device_id=DO_NOT_TRACK_THIS_DEVICE&undefined=");
-	Request request = new Request.Builder()
-			.url(AUTHURL)
-			.post(body)
-			.addHeader("Content-Type", "application/x-www-form-urlencoded")
-			.addHeader("Authorization", "Basic " + encodedAuthString) //base64 of app id
-			.addHeader("cache-control", "no-cache")
-			.build();
-
-	client.newCall(request).enqueue(new Callback() {
-	  @Override
-	  public void onFailure(Call call, IOException e) {
-		Log.e(TAG, "ERROR: " + e);
-	  }
-
-	  @Override
-	  public void onResponse(Call call, Response response) throws IOException {
-		String json = response.body().string();
-
-		JSONObject data = null;
-		try {
-		  data = new JSONObject(json);
-		  accessToken = data.optString("access_token");
-		  Log.d(TAG, "Access Token = " + accessToken);
-
-
-
-		} catch (JSONException e) {
-		  e.printStackTrace();
-		}
-	  }
-	});
+	System.out.println(intent.getStringExtra("accessToken"));
   }
 
 }
