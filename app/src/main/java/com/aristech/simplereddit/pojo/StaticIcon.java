@@ -2,10 +2,13 @@ package com.aristech.simplereddit.pojo;
 
 import com.google.gson.annotations.SerializedName;
 
-public class ResolutionsItem{
+public class StaticIcon{
 
 	@SerializedName("width")
 	private int width;
+
+	@SerializedName("format")
+	private Object format;
 
 	@SerializedName("url")
 	private String url;
@@ -15,6 +18,10 @@ public class ResolutionsItem{
 
 	public int getWidth(){
 		return width;
+	}
+
+	public Object getFormat(){
+		return format;
 	}
 
 	public String getUrl(){

@@ -5,171 +5,213 @@ import com.google.gson.annotations.SerializedName;
 
 public class AllAwardingsItem{
 
-  @SerializedName("icon_url")
-  private String iconUrl;
+	@SerializedName("icon_width")
+	private int iconWidth;
 
-  @SerializedName("icon_width")
-  private int iconWidth;
+	@SerializedName("end_date")
+	private Object endDate;
 
-  @SerializedName("end_date")
-  private Object endDate;
+	@SerializedName("award_sub_type")
+	private String awardSubType;
 
-  @SerializedName("award_sub_type")
-  private String awardSubType;
+	@SerializedName("days_of_drip_extension")
+	private int daysOfDripExtension;
 
-  @SerializedName("is_new")
-  private boolean isNew;
+	@SerializedName("coin_reward")
+	private int coinReward;
 
-  @SerializedName("days_of_drip_extension")
-  private int daysOfDripExtension;
+	@SerializedName("description")
+	private String description;
 
-  @SerializedName("coin_reward")
-  private int coinReward;
+	@SerializedName("tiers_by_required_awardings")
+	private TiersByRequiredAwardings tiersByRequiredAwardings;
 
-  @SerializedName("icon_height")
-  private int iconHeight;
+	@SerializedName("awardings_required_to_grant_benefits")
+	private int awardingsRequiredToGrantBenefits;
 
-  @SerializedName("count")
-  private int count;
+	@SerializedName("resized_icons")
+	private List<ResizedIconsItem> resizedIcons;
 
-  @SerializedName("description")
-  private String description;
+	@SerializedName("coin_price")
+	private int coinPrice;
 
-  @SerializedName("resized_icons")
-  private List<ResizedIconsItem> resizedIcons;
+	@SerializedName("subreddit_coin_reward")
+	private int subredditCoinReward;
 
-  @SerializedName("coin_price")
-  private int coinPrice;
+	@SerializedName("icon_format")
+	private String iconFormat;
 
-  @SerializedName("subreddit_coin_reward")
-  private int subredditCoinReward;
+	@SerializedName("award_type")
+	private String awardType;
 
-  @SerializedName("icon_format")
-  private Object iconFormat;
+	@SerializedName("static_icon_url")
+	private String staticIconUrl;
 
-  @SerializedName("award_type")
-  private String awardType;
+	@SerializedName("subreddit_id")
+	private Object subredditId;
 
-  @SerializedName("subreddit_id")
-  private Object subredditId;
+	@SerializedName("is_enabled")
+	private boolean isEnabled;
 
-  @SerializedName("giver_coin_reward")
-  private Object giverCoinReward;
+	@SerializedName("penny_price")
+	private int pennyPrice;
 
-  @SerializedName("is_enabled")
-  private boolean isEnabled;
+	@SerializedName("penny_donate")
+	private int pennyDonate;
 
-  @SerializedName("penny_price")
-  private Object pennyPrice;
+	@SerializedName("static_icon_height")
+	private int staticIconHeight;
 
-  @SerializedName("penny_donate")
-  private Object pennyDonate;
+	@SerializedName("id")
+	private String id;
 
-  @SerializedName("name")
-  private String name;
+	@SerializedName("days_of_premium")
+	private int daysOfPremium;
 
-  @SerializedName("id")
-  private String id;
+	@SerializedName("start_date")
+	private Object startDate;
 
-  @SerializedName("days_of_premium")
-  private int daysOfPremium;
+	@SerializedName("icon_url")
+	private String iconUrl;
 
-  @SerializedName("start_date")
-  private Object startDate;
+	@SerializedName("is_new")
+	private boolean isNew;
 
-  public String getIconUrl(){
-	return iconUrl;
-  }
+	@SerializedName("icon_height")
+	private int iconHeight;
 
-  public int getIconWidth(){
-	return iconWidth;
-  }
+	@SerializedName("static_icon_width")
+	private int staticIconWidth;
 
-  public Object getEndDate(){
-	return endDate;
-  }
+	@SerializedName("count")
+	private int count;
 
-  public String getAwardSubType(){
-	return awardSubType;
-  }
+	@SerializedName("resized_static_icons")
+	private List<ResizedStaticIconsItem> resizedStaticIcons;
 
-  public boolean isIsNew(){
-	return isNew;
-  }
+	@SerializedName("giver_coin_reward")
+	private int giverCoinReward;
 
-  public int getDaysOfDripExtension(){
-	return daysOfDripExtension;
-  }
+	@SerializedName("name")
+	private String name;
 
-  public int getCoinReward(){
-	return coinReward;
-  }
+	public int getIconWidth(){
+		return iconWidth;
+	}
 
-  public int getIconHeight(){
-	return iconHeight;
-  }
+	public Object getEndDate(){
+		return endDate;
+	}
 
-  public int getCount(){
-	return count;
-  }
+	public String getAwardSubType(){
+		return awardSubType;
+	}
 
-  public String getDescription(){
-	return description;
-  }
+	public int getDaysOfDripExtension(){
+		return daysOfDripExtension;
+	}
 
-  public List<ResizedIconsItem> getResizedIcons(){
-	return resizedIcons;
-  }
+	public int getCoinReward(){
+		return coinReward;
+	}
 
-  public int getCoinPrice(){
-	return coinPrice;
-  }
+	public String getDescription(){
+		return description;
+	}
 
-  public int getSubredditCoinReward(){
-	return subredditCoinReward;
-  }
+	public TiersByRequiredAwardings getTiersByRequiredAwardings(){
+		return tiersByRequiredAwardings;
+	}
 
-  public Object getIconFormat(){
-	return iconFormat;
-  }
+	public int getAwardingsRequiredToGrantBenefits(){
+		return awardingsRequiredToGrantBenefits;
+	}
 
-  public String getAwardType(){
-	return awardType;
-  }
+	public List<ResizedIconsItem> getResizedIcons(){
+		return resizedIcons;
+	}
 
-  public Object getSubredditId(){
-	return subredditId;
-  }
+	public int getCoinPrice(){
+		return coinPrice;
+	}
 
-  public Object getGiverCoinReward(){
-	return giverCoinReward;
-  }
+	public int getSubredditCoinReward(){
+		return subredditCoinReward;
+	}
 
-  public boolean isIsEnabled(){
-	return isEnabled;
-  }
+	public String getIconFormat(){
+		return iconFormat;
+	}
 
-  public Object getPennyPrice(){
-	return pennyPrice;
-  }
+	public String getAwardType(){
+		return awardType;
+	}
 
-  public Object getPennyDonate(){
-	return pennyDonate;
-  }
+	public String getStaticIconUrl(){
+		return staticIconUrl;
+	}
 
-  public String getName(){
-	return name;
-  }
+	public Object getSubredditId(){
+		return subredditId;
+	}
 
-  public String getId(){
-	return id;
-  }
+	public boolean isIsEnabled(){
+		return isEnabled;
+	}
 
-  public int getDaysOfPremium(){
-	return daysOfPremium;
-  }
+	public int getPennyPrice(){
+		return pennyPrice;
+	}
 
-  public Object getStartDate(){
-	return startDate;
-  }
+	public int getPennyDonate(){
+		return pennyDonate;
+	}
+
+	public int getStaticIconHeight(){
+		return staticIconHeight;
+	}
+
+	public String getId(){
+		return id;
+	}
+
+	public int getDaysOfPremium(){
+		return daysOfPremium;
+	}
+
+	public Object getStartDate(){
+		return startDate;
+	}
+
+	public String getIconUrl(){
+		return iconUrl;
+	}
+
+	public boolean isIsNew(){
+		return isNew;
+	}
+
+	public int getIconHeight(){
+		return iconHeight;
+	}
+
+	public int getStaticIconWidth(){
+		return staticIconWidth;
+	}
+
+	public int getCount(){
+		return count;
+	}
+
+	public List<ResizedStaticIconsItem> getResizedStaticIcons(){
+		return resizedStaticIcons;
+	}
+
+	public int getGiverCoinReward(){
+		return giverCoinReward;
+	}
+
+	public String getName(){
+		return name;
+	}
 }

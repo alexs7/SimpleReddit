@@ -2,7 +2,7 @@ package com.aristech.simplereddit.pojo;
 
 import com.google.gson.annotations.SerializedName;
 
-public class ChildrenItem{
+public class Response{
 
 	@SerializedName("data")
 	private Data data;

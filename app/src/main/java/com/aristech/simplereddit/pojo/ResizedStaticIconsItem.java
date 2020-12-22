@@ -2,7 +2,7 @@ package com.aristech.simplereddit.pojo;
 
 import com.google.gson.annotations.SerializedName;
 
-public class ResolutionsItem{
+public class ResizedStaticIconsItem{
 
 	@SerializedName("width")
 	private int width;

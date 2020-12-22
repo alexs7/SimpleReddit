@@ -5,773 +5,787 @@ import com.google.gson.annotations.SerializedName;
 
 public class Data{
 
-  @SerializedName("modhash")
-  private String modhash;
+	@SerializedName("modhash")
+	private String modhash;
 
-  @SerializedName("children")
-  private List<ChildrenItem> children;
+	@SerializedName("children")
+	private List<ChildrenItem> children;
 
-  @SerializedName("before")
-  private Object before;
+	@SerializedName("before")
+	private Object before;
 
-  @SerializedName("dist")
-  private int dist;
+	@SerializedName("dist")
+	private int dist;
 
-  @SerializedName("after")
-  private String after;
+	@SerializedName("after")
+	private String after;
 
-  @SerializedName("secure_media")
-  private Object secureMedia;
+	@SerializedName("secure_media")
+	private Object secureMedia;
 
-  @SerializedName("saved")
-  private boolean saved;
+	@SerializedName("saved")
+	private boolean saved;
 
-  @SerializedName("hide_score")
-  private boolean hideScore;
+	@SerializedName("hide_score")
+	private boolean hideScore;
 
-  @SerializedName("total_awards_received")
-  private int totalAwardsReceived;
+	@SerializedName("total_awards_received")
+	private int totalAwardsReceived;
 
-  @SerializedName("subreddit_id")
-  private String subredditId;
+	@SerializedName("subreddit_id")
+	private String subredditId;
 
-  @SerializedName("score")
-  private int score;
+	@SerializedName("score")
+	private int score;
 
-  @SerializedName("num_comments")
-  private int numComments;
+	@SerializedName("num_comments")
+	private int numComments;
 
-  @SerializedName("mod_reason_title")
-  private Object modReasonTitle;
+	@SerializedName("mod_reason_title")
+	private Object modReasonTitle;
 
-  @SerializedName("whitelist_status")
-  private String whitelistStatus;
+	@SerializedName("whitelist_status")
+	private String whitelistStatus;
 
-  @SerializedName("removed_by")
-  private Object removedBy;
+	@SerializedName("removed_by")
+	private Object removedBy;
 
-  @SerializedName("spoiler")
-  private boolean spoiler;
+	@SerializedName("spoiler")
+	private boolean spoiler;
 
-  @SerializedName("id")
-  private String id;
+	@SerializedName("id")
+	private String id;
 
-  @SerializedName("created_utc")
-  private int createdUtc;
+	@SerializedName("created_utc")
+	private int createdUtc;
 
-  @SerializedName("banned_at_utc")
-  private Object bannedAtUtc;
+	@SerializedName("banned_at_utc")
+	private Object bannedAtUtc;
 
-  @SerializedName("discussion_type")
-  private Object discussionType;
+	@SerializedName("discussion_type")
+	private Object discussionType;
 
-  @SerializedName("edited")
-  private boolean edited;
+	@SerializedName("edited")
+	private boolean edited;
 
-  @SerializedName("allow_live_comments")
-  private boolean allowLiveComments;
+	@SerializedName("allow_live_comments")
+	private boolean allowLiveComments;
 
-  @SerializedName("author_flair_background_color")
-  private Object authorFlairBackgroundColor;
+	@SerializedName("author_flair_background_color")
+	private Object authorFlairBackgroundColor;
 
-  @SerializedName("approved_by")
-  private Object approvedBy;
+	@SerializedName("approved_by")
+	private Object approvedBy;
 
-  @SerializedName("media_embed")
-  private MediaEmbed mediaEmbed;
+	@SerializedName("media_embed")
+	private MediaEmbed mediaEmbed;
 
-  @SerializedName("domain")
-  private String domain;
+	@SerializedName("top_awarded_type")
+	private String topAwardedType;
 
-  @SerializedName("approved_at_utc")
-  private Object approvedAtUtc;
+	@SerializedName("domain")
+	private String domain;
 
-  @SerializedName("no_follow")
-  private boolean noFollow;
+	@SerializedName("approved_at_utc")
+	private Object approvedAtUtc;
 
-  @SerializedName("ups")
-  private int ups;
+	@SerializedName("no_follow")
+	private boolean noFollow;
 
-  @SerializedName("author_flair_type")
-  private String authorFlairType;
+	@SerializedName("ups")
+	private int ups;
 
-  @SerializedName("permalink")
-  private String permalink;
+	@SerializedName("author_flair_type")
+	private String authorFlairType;
 
-  @SerializedName("content_categories")
-  private Object contentCategories;
+	@SerializedName("permalink")
+	private String permalink;
 
-  @SerializedName("wls")
-  private int wls;
+	@SerializedName("content_categories")
+	private Object contentCategories;
 
-  @SerializedName("author_flair_css_class")
-  private Object authorFlairCssClass;
+	@SerializedName("wls")
+	private int wls;
 
-  @SerializedName("mod_reports")
-  private List<Object> modReports;
+	@SerializedName("author_flair_css_class")
+	private Object authorFlairCssClass;
 
-  @SerializedName("gilded")
-  private int gilded;
+	@SerializedName("mod_reports")
+	private List<Object> modReports;
 
-  @SerializedName("removal_reason")
-  private Object removalReason;
+	@SerializedName("gilded")
+	private int gilded;
 
-  @SerializedName("send_replies")
-  private boolean sendReplies;
+	@SerializedName("removal_reason")
+	private Object removalReason;
 
-  @SerializedName("archived")
-  private boolean archived;
+	@SerializedName("send_replies")
+	private boolean sendReplies;
 
-  @SerializedName("author_flair_text_color")
-  private Object authorFlairTextColor;
+	@SerializedName("archived")
+	private boolean archived;
 
-  @SerializedName("can_mod_post")
-  private boolean canModPost;
+	@SerializedName("author_flair_text_color")
+	private Object authorFlairTextColor;
 
-  @SerializedName("is_self")
-  private boolean isSelf;
+	@SerializedName("can_mod_post")
+	private boolean canModPost;
 
-  @SerializedName("author_fullname")
-  private String authorFullname;
+	@SerializedName("is_self")
+	private boolean isSelf;
 
-  @SerializedName("link_flair_css_class")
-  private Object linkFlairCssClass;
+	@SerializedName("author_fullname")
+	private String authorFullname;
 
-  @SerializedName("selftext")
-  private String selftext;
+	@SerializedName("link_flair_css_class")
+	private Object linkFlairCssClass;
 
-  @SerializedName("upvote_ratio")
-  private double upvoteRatio;
+	@SerializedName("selftext")
+	private String selftext;
 
-  @SerializedName("selftext_html")
-  private Object selftextHtml;
+	@SerializedName("upvote_ratio")
+	private double upvoteRatio;
 
-  @SerializedName("user_reports")
-  private List<Object> userReports;
+	@SerializedName("selftext_html")
+	private Object selftextHtml;
 
-  @SerializedName("is_crosspostable")
-  private boolean isCrosspostable;
+	@SerializedName("user_reports")
+	private List<Object> userReports;
 
-  @SerializedName("clicked")
-  private boolean clicked;
+	@SerializedName("is_crosspostable")
+	private boolean isCrosspostable;
 
-  @SerializedName("author_flair_template_id")
-  private Object authorFlairTemplateId;
+	@SerializedName("clicked")
+	private boolean clicked;
 
-  @SerializedName("url")
-  private String url;
+	@SerializedName("author_flair_template_id")
+	private Object authorFlairTemplateId;
 
-  @SerializedName("parent_whitelist_status")
-  private String parentWhitelistStatus;
+	@SerializedName("url")
+	private String url;
 
-  @SerializedName("stickied")
-  private boolean stickied;
+	@SerializedName("url_overridden_by_dest")
+	private String urlOverriddenByDest;
 
-  @SerializedName("quarantine")
-  private boolean quarantine;
+	@SerializedName("parent_whitelist_status")
+	private String parentWhitelistStatus;
 
-  @SerializedName("view_count")
-  private Object viewCount;
+	@SerializedName("stickied")
+	private boolean stickied;
 
-  @SerializedName("link_flair_richtext")
-  private List<Object> linkFlairRichtext;
+	@SerializedName("quarantine")
+	private boolean quarantine;
 
-  @SerializedName("link_flair_background_color")
-  private String linkFlairBackgroundColor;
+	@SerializedName("view_count")
+	private Object viewCount;
 
-  @SerializedName("author_flair_richtext")
-  private List<Object> authorFlairRichtext;
+	@SerializedName("link_flair_richtext")
+	private List<Object> linkFlairRichtext;
 
-  @SerializedName("over_18")
-  private boolean over18;
+	@SerializedName("link_flair_background_color")
+	private String linkFlairBackgroundColor;
 
-  @SerializedName("subreddit")
-  private String subreddit;
+	@SerializedName("author_flair_richtext")
+	private List<Object> authorFlairRichtext;
 
-  @SerializedName("suggested_sort")
-  private Object suggestedSort;
+	@SerializedName("over_18")
+	private boolean over18;
 
-  @SerializedName("can_gild")
-  private boolean canGild;
+	@SerializedName("subreddit")
+	private String subreddit;
 
-  @SerializedName("is_robot_indexable")
-  private boolean isRobotIndexable;
+	@SerializedName("suggested_sort")
+	private Object suggestedSort;
 
-  @SerializedName("author_premium")
-  private boolean authorPremium;
+	@SerializedName("can_gild")
+	private boolean canGild;
 
-  @SerializedName("post_hint")
-  private String postHint;
+	@SerializedName("is_robot_indexable")
+	private boolean isRobotIndexable;
 
-  @SerializedName("locked")
-  private boolean locked;
+	@SerializedName("author_premium")
+	private boolean authorPremium;
 
-  @SerializedName("likes")
-  private Object likes;
+	@SerializedName("post_hint")
+	private String postHint;
 
-  @SerializedName("thumbnail")
-  private String thumbnail;
+	@SerializedName("locked")
+	private boolean locked;
 
-  @SerializedName("downs")
-  private int downs;
+	@SerializedName("likes")
+	private Object likes;
 
-  @SerializedName("created")
-  private int created;
+	@SerializedName("thumbnail")
+	private String thumbnail;
 
-  @SerializedName("author")
-  private String author;
+	@SerializedName("downs")
+	private int downs;
 
-  @SerializedName("treatment_tags")
-  private List<Object> treatmentTags;
+	@SerializedName("created")
+	private int created;
 
-  @SerializedName("link_flair_text_color")
-  private String linkFlairTextColor;
+	@SerializedName("author")
+	private String author;
 
-  @SerializedName("gildings")
-  private Gildings gildings;
+	@SerializedName("treatment_tags")
+	private List<Object> treatmentTags;
 
-  @SerializedName("report_reasons")
-  private Object reportReasons;
+	@SerializedName("link_flair_text_color")
+	private String linkFlairTextColor;
 
-  @SerializedName("is_video")
-  private boolean isVideo;
+	@SerializedName("gildings")
+	private Gildings gildings;
 
-  @SerializedName("is_original_content")
-  private boolean isOriginalContent;
+	@SerializedName("report_reasons")
+	private Object reportReasons;
 
-  @SerializedName("subreddit_name_prefixed")
-  private String subredditNamePrefixed;
+	@SerializedName("is_video")
+	private boolean isVideo;
 
-  @SerializedName("mod_reason_by")
-  private Object modReasonBy;
+	@SerializedName("is_original_content")
+	private boolean isOriginalContent;
 
-  @SerializedName("name")
-  private String name;
+	@SerializedName("subreddit_name_prefixed")
+	private String subredditNamePrefixed;
 
-  @SerializedName("awarders")
-  private List<Object> awarders;
+	@SerializedName("mod_reason_by")
+	private Object modReasonBy;
 
-  @SerializedName("media_only")
-  private boolean mediaOnly;
+	@SerializedName("name")
+	private String name;
 
-  @SerializedName("preview")
-  private Preview preview;
+	@SerializedName("awarders")
+	private List<Object> awarders;
 
-  @SerializedName("num_reports")
-  private Object numReports;
+	@SerializedName("media_only")
+	private boolean mediaOnly;
 
-  @SerializedName("pinned")
-  private boolean pinned;
+	@SerializedName("preview")
+	private Preview preview;
 
-  @SerializedName("hidden")
-  private boolean hidden;
+	@SerializedName("num_reports")
+	private Object numReports;
 
-  @SerializedName("author_patreon_flair")
-  private boolean authorPatreonFlair;
+	@SerializedName("pinned")
+	private boolean pinned;
 
-  @SerializedName("mod_note")
-  private Object modNote;
+	@SerializedName("hidden")
+	private boolean hidden;
 
-  @SerializedName("media")
-  private Object media;
+	@SerializedName("author_patreon_flair")
+	private boolean authorPatreonFlair;
 
-  @SerializedName("title")
-  private String title;
+	@SerializedName("mod_note")
+	private Object modNote;
 
-  @SerializedName("author_flair_text")
-  private Object authorFlairText;
+	@SerializedName("media")
+	private Object media;
 
-  @SerializedName("num_crossposts")
-  private int numCrossposts;
+	@SerializedName("title")
+	private String title;
 
-  @SerializedName("thumbnail_width")
-  private int thumbnailWidth;
+	@SerializedName("author_flair_text")
+	private Object authorFlairText;
 
-  @SerializedName("secure_media_embed")
-  private SecureMediaEmbed secureMediaEmbed;
+	@SerializedName("num_crossposts")
+	private int numCrossposts;
 
-  @SerializedName("link_flair_text")
-  private Object linkFlairText;
+	@SerializedName("thumbnail_width")
+	private int thumbnailWidth;
 
-  @SerializedName("subreddit_type")
-  private String subredditType;
+	@SerializedName("secure_media_embed")
+	private SecureMediaEmbed secureMediaEmbed;
 
-  @SerializedName("is_meta")
-  private boolean isMeta;
+	@SerializedName("link_flair_text")
+	private Object linkFlairText;
 
-  @SerializedName("subreddit_subscribers")
-  private int subredditSubscribers;
+	@SerializedName("subreddit_type")
+	private String subredditType;
 
-  @SerializedName("distinguished")
-  private Object distinguished;
+	@SerializedName("is_meta")
+	private boolean isMeta;
 
-  @SerializedName("removed_by_category")
-  private Object removedByCategory;
+	@SerializedName("subreddit_subscribers")
+	private int subredditSubscribers;
 
-  @SerializedName("thumbnail_height")
-  private int thumbnailHeight;
+	@SerializedName("distinguished")
+	private Object distinguished;
 
-  @SerializedName("link_flair_type")
-  private String linkFlairType;
+	@SerializedName("removed_by_category")
+	private Object removedByCategory;
 
-  @SerializedName("all_awardings")
-  private List<AllAwardingsItem> allAwardings;
+	@SerializedName("thumbnail_height")
+	private int thumbnailHeight;
 
-  @SerializedName("visited")
-  private boolean visited;
+	@SerializedName("link_flair_type")
+	private String linkFlairType;
 
-  @SerializedName("pwls")
-  private int pwls;
+	@SerializedName("all_awardings")
+	private List<AllAwardingsItem> allAwardings;
 
-  @SerializedName("category")
-  private Object category;
+	@SerializedName("visited")
+	private boolean visited;
 
-  @SerializedName("banned_by")
-  private Object bannedBy;
+	@SerializedName("pwls")
+	private int pwls;
 
-  @SerializedName("contest_mode")
-  private boolean contestMode;
+	@SerializedName("category")
+	private Object category;
 
-  @SerializedName("is_reddit_media_domain")
-  private boolean isRedditMediaDomain;
+	@SerializedName("banned_by")
+	private Object bannedBy;
 
-  public String getModhash(){
-	return modhash;
-  }
+	@SerializedName("contest_mode")
+	private boolean contestMode;
 
-  public List<ChildrenItem> getChildren(){
-	return children;
-  }
+	@SerializedName("is_reddit_media_domain")
+	private boolean isRedditMediaDomain;
 
-  public Object getBefore(){
-	return before;
-  }
+	public String getModhash(){
+		return modhash;
+	}
 
-  public int getDist(){
-	return dist;
-  }
+	public List<ChildrenItem> getChildren(){
+		return children;
+	}
 
-  public String getAfter(){
-	return after;
-  }
+	public Object getBefore(){
+		return before;
+	}
 
-  public Object getSecureMedia(){
-	return secureMedia;
-  }
+	public int getDist(){
+		return dist;
+	}
 
-  public boolean isSaved(){
-	return saved;
-  }
+	public String getAfter(){
+		return after;
+	}
 
-  public boolean isHideScore(){
-	return hideScore;
-  }
+	public Object getSecureMedia(){
+		return secureMedia;
+	}
 
-  public int getTotalAwardsReceived(){
-	return totalAwardsReceived;
-  }
+	public boolean isSaved(){
+		return saved;
+	}
 
-  public String getSubredditId(){
-	return subredditId;
-  }
+	public boolean isHideScore(){
+		return hideScore;
+	}
 
-  public int getScore(){
-	return score;
-  }
+	public int getTotalAwardsReceived(){
+		return totalAwardsReceived;
+	}
 
-  public int getNumComments(){
-	return numComments;
-  }
+	public String getSubredditId(){
+		return subredditId;
+	}
 
-  public Object getModReasonTitle(){
-	return modReasonTitle;
-  }
+	public int getScore(){
+		return score;
+	}
 
-  public String getWhitelistStatus(){
-	return whitelistStatus;
-  }
+	public int getNumComments(){
+		return numComments;
+	}
 
-  public Object getRemovedBy(){
-	return removedBy;
-  }
+	public Object getModReasonTitle(){
+		return modReasonTitle;
+	}
 
-  public boolean isSpoiler(){
-	return spoiler;
-  }
+	public String getWhitelistStatus(){
+		return whitelistStatus;
+	}
 
-  public String getId(){
-	return id;
-  }
+	public Object getRemovedBy(){
+		return removedBy;
+	}
 
-  public int getCreatedUtc(){
-	return createdUtc;
-  }
+	public boolean isSpoiler(){
+		return spoiler;
+	}
 
-  public Object getBannedAtUtc(){
-	return bannedAtUtc;
-  }
+	public String getId(){
+		return id;
+	}
 
-  public Object getDiscussionType(){
-	return discussionType;
-  }
+	public int getCreatedUtc(){
+		return createdUtc;
+	}
 
-  public boolean isEdited(){
-	return edited;
-  }
+	public Object getBannedAtUtc(){
+		return bannedAtUtc;
+	}
 
-  public boolean isAllowLiveComments(){
-	return allowLiveComments;
-  }
+	public Object getDiscussionType(){
+		return discussionType;
+	}
 
-  public Object getAuthorFlairBackgroundColor(){
-	return authorFlairBackgroundColor;
-  }
+	public boolean isEdited(){
+		return edited;
+	}
 
-  public Object getApprovedBy(){
-	return approvedBy;
-  }
+	public boolean isAllowLiveComments(){
+		return allowLiveComments;
+	}
 
-  public MediaEmbed getMediaEmbed(){
-	return mediaEmbed;
-  }
+	public Object getAuthorFlairBackgroundColor(){
+		return authorFlairBackgroundColor;
+	}
 
-  public String getDomain(){
-	return domain;
-  }
+	public Object getApprovedBy(){
+		return approvedBy;
+	}
 
-  public Object getApprovedAtUtc(){
-	return approvedAtUtc;
-  }
+	public MediaEmbed getMediaEmbed(){
+		return mediaEmbed;
+	}
 
-  public boolean isNoFollow(){
-	return noFollow;
-  }
+	public String getTopAwardedType(){
+		return topAwardedType;
+	}
 
-  public int getUps(){
-	return ups;
-  }
+	public String getDomain(){
+		return domain;
+	}
 
-  public String getAuthorFlairType(){
-	return authorFlairType;
-  }
+	public Object getApprovedAtUtc(){
+		return approvedAtUtc;
+	}
 
-  public String getPermalink(){
-	return permalink;
-  }
+	public boolean isNoFollow(){
+		return noFollow;
+	}
 
-  public Object getContentCategories(){
-	return contentCategories;
-  }
+	public int getUps(){
+		return ups;
+	}
 
-  public int getWls(){
-	return wls;
-  }
+	public String getAuthorFlairType(){
+		return authorFlairType;
+	}
 
-  public Object getAuthorFlairCssClass(){
-	return authorFlairCssClass;
-  }
+	public String getPermalink(){
+		return permalink;
+	}
 
-  public List<Object> getModReports(){
-	return modReports;
-  }
+	public Object getContentCategories(){
+		return contentCategories;
+	}
 
-  public int getGilded(){
-	return gilded;
-  }
+	public int getWls(){
+		return wls;
+	}
 
-  public Object getRemovalReason(){
-	return removalReason;
-  }
+	public Object getAuthorFlairCssClass(){
+		return authorFlairCssClass;
+	}
 
-  public boolean isSendReplies(){
-	return sendReplies;
-  }
+	public List<Object> getModReports(){
+		return modReports;
+	}
 
-  public boolean isArchived(){
-	return archived;
-  }
+	public int getGilded(){
+		return gilded;
+	}
 
-  public Object getAuthorFlairTextColor(){
-	return authorFlairTextColor;
-  }
+	public Object getRemovalReason(){
+		return removalReason;
+	}
 
-  public boolean isCanModPost(){
-	return canModPost;
-  }
+	public boolean isSendReplies(){
+		return sendReplies;
+	}
 
-  public boolean isIsSelf(){
-	return isSelf;
-  }
+	public boolean isArchived(){
+		return archived;
+	}
 
-  public String getAuthorFullname(){
-	return authorFullname;
-  }
+	public Object getAuthorFlairTextColor(){
+		return authorFlairTextColor;
+	}
 
-  public Object getLinkFlairCssClass(){
-	return linkFlairCssClass;
-  }
+	public boolean isCanModPost(){
+		return canModPost;
+	}
 
-  public String getSelftext(){
-	return selftext;
-  }
+	public boolean isIsSelf(){
+		return isSelf;
+	}
 
-  public double getUpvoteRatio(){
-	return upvoteRatio;
-  }
+	public String getAuthorFullname(){
+		return authorFullname;
+	}
 
-  public Object getSelftextHtml(){
-	return selftextHtml;
-  }
+	public Object getLinkFlairCssClass(){
+		return linkFlairCssClass;
+	}
 
-  public List<Object> getUserReports(){
-	return userReports;
-  }
+	public String getSelftext(){
+		return selftext;
+	}
 
-  public boolean isIsCrosspostable(){
-	return isCrosspostable;
-  }
+	public double getUpvoteRatio(){
+		return upvoteRatio;
+	}
 
-  public boolean isClicked(){
-	return clicked;
-  }
+	public Object getSelftextHtml(){
+		return selftextHtml;
+	}
 
-  public Object getAuthorFlairTemplateId(){
-	return authorFlairTemplateId;
-  }
+	public List<Object> getUserReports(){
+		return userReports;
+	}
 
-  public String getUrl(){
-	return url;
-  }
+	public boolean isIsCrosspostable(){
+		return isCrosspostable;
+	}
 
-  public String getParentWhitelistStatus(){
-	return parentWhitelistStatus;
-  }
+	public boolean isClicked(){
+		return clicked;
+	}
 
-  public boolean isStickied(){
-	return stickied;
-  }
+	public Object getAuthorFlairTemplateId(){
+		return authorFlairTemplateId;
+	}
 
-  public boolean isQuarantine(){
-	return quarantine;
-  }
+	public String getUrl(){
+		return url;
+	}
 
-  public Object getViewCount(){
-	return viewCount;
-  }
+	public String getUrlOverriddenByDest(){
+		return urlOverriddenByDest;
+	}
 
-  public List<Object> getLinkFlairRichtext(){
-	return linkFlairRichtext;
-  }
+	public String getParentWhitelistStatus(){
+		return parentWhitelistStatus;
+	}
 
-  public String getLinkFlairBackgroundColor(){
-	return linkFlairBackgroundColor;
-  }
+	public boolean isStickied(){
+		return stickied;
+	}
 
-  public List<Object> getAuthorFlairRichtext(){
-	return authorFlairRichtext;
-  }
+	public boolean isQuarantine(){
+		return quarantine;
+	}
 
-  public boolean isOver18(){
-	return over18;
-  }
+	public Object getViewCount(){
+		return viewCount;
+	}
 
-  public String getSubreddit(){
-	return subreddit;
-  }
+	public List<Object> getLinkFlairRichtext(){
+		return linkFlairRichtext;
+	}
 
-  public Object getSuggestedSort(){
-	return suggestedSort;
-  }
+	public String getLinkFlairBackgroundColor(){
+		return linkFlairBackgroundColor;
+	}
 
-  public boolean isCanGild(){
-	return canGild;
-  }
+	public List<Object> getAuthorFlairRichtext(){
+		return authorFlairRichtext;
+	}
 
-  public boolean isIsRobotIndexable(){
-	return isRobotIndexable;
-  }
+	public boolean isOver18(){
+		return over18;
+	}
 
-  public boolean isAuthorPremium(){
-	return authorPremium;
-  }
+	public String getSubreddit(){
+		return subreddit;
+	}
 
-  public String getPostHint(){
-	return postHint;
-  }
+	public Object getSuggestedSort(){
+		return suggestedSort;
+	}
 
-  public boolean isLocked(){
-	return locked;
-  }
+	public boolean isCanGild(){
+		return canGild;
+	}
 
-  public Object getLikes(){
-	return likes;
-  }
+	public boolean isIsRobotIndexable(){
+		return isRobotIndexable;
+	}
 
-  public String getThumbnail(){
-	return thumbnail;
-  }
+	public boolean isAuthorPremium(){
+		return authorPremium;
+	}
 
-  public int getDowns(){
-	return downs;
-  }
+	public String getPostHint(){
+		return postHint;
+	}
 
-  public int getCreated(){
-	return created;
-  }
+	public boolean isLocked(){
+		return locked;
+	}
 
-  public String getAuthor(){
-	return author;
-  }
+	public Object getLikes(){
+		return likes;
+	}
 
-  public List<Object> getTreatmentTags(){
-	return treatmentTags;
-  }
+	public String getThumbnail(){
+		return thumbnail;
+	}
 
-  public String getLinkFlairTextColor(){
-	return linkFlairTextColor;
-  }
+	public int getDowns(){
+		return downs;
+	}
 
-  public Gildings getGildings(){
-	return gildings;
-  }
+	public int getCreated(){
+		return created;
+	}
 
-  public Object getReportReasons(){
-	return reportReasons;
-  }
+	public String getAuthor(){
+		return author;
+	}
 
-  public boolean isIsVideo(){
-	return isVideo;
-  }
+	public List<Object> getTreatmentTags(){
+		return treatmentTags;
+	}
 
-  public boolean isIsOriginalContent(){
-	return isOriginalContent;
-  }
+	public String getLinkFlairTextColor(){
+		return linkFlairTextColor;
+	}
 
-  public String getSubredditNamePrefixed(){
-	return subredditNamePrefixed;
-  }
+	public Gildings getGildings(){
+		return gildings;
+	}
 
-  public Object getModReasonBy(){
-	return modReasonBy;
-  }
+	public Object getReportReasons(){
+		return reportReasons;
+	}
 
-  public String getName(){
-	return name;
-  }
+	public boolean isIsVideo(){
+		return isVideo;
+	}
 
-  public List<Object> getAwarders(){
-	return awarders;
-  }
+	public boolean isIsOriginalContent(){
+		return isOriginalContent;
+	}
 
-  public boolean isMediaOnly(){
-	return mediaOnly;
-  }
+	public String getSubredditNamePrefixed(){
+		return subredditNamePrefixed;
+	}
 
-  public Preview getPreview(){
-	return preview;
-  }
+	public Object getModReasonBy(){
+		return modReasonBy;
+	}
 
-  public Object getNumReports(){
-	return numReports;
-  }
+	public String getName(){
+		return name;
+	}
 
-  public boolean isPinned(){
-	return pinned;
-  }
+	public List<Object> getAwarders(){
+		return awarders;
+	}
 
-  public boolean isHidden(){
-	return hidden;
-  }
+	public boolean isMediaOnly(){
+		return mediaOnly;
+	}
 
-  public boolean isAuthorPatreonFlair(){
-	return authorPatreonFlair;
-  }
+	public Preview getPreview(){
+		return preview;
+	}
 
-  public Object getModNote(){
-	return modNote;
-  }
+	public Object getNumReports(){
+		return numReports;
+	}
 
-  public Object getMedia(){
-	return media;
-  }
+	public boolean isPinned(){
+		return pinned;
+	}
 
-  public String getTitle(){
-	return title;
-  }
+	public boolean isHidden(){
+		return hidden;
+	}
 
-  public Object getAuthorFlairText(){
-	return authorFlairText;
-  }
+	public boolean isAuthorPatreonFlair(){
+		return authorPatreonFlair;
+	}
 
-  public int getNumCrossposts(){
-	return numCrossposts;
-  }
+	public Object getModNote(){
+		return modNote;
+	}
 
-  public int getThumbnailWidth(){
-	return thumbnailWidth;
-  }
+	public Object getMedia(){
+		return media;
+	}
 
-  public SecureMediaEmbed getSecureMediaEmbed(){
-	return secureMediaEmbed;
-  }
+	public String getTitle(){
+		return title;
+	}
 
-  public Object getLinkFlairText(){
-	return linkFlairText;
-  }
+	public Object getAuthorFlairText(){
+		return authorFlairText;
+	}
 
-  public String getSubredditType(){
-	return subredditType;
-  }
+	public int getNumCrossposts(){
+		return numCrossposts;
+	}
 
-  public boolean isIsMeta(){
-	return isMeta;
-  }
+	public int getThumbnailWidth(){
+		return thumbnailWidth;
+	}
 
-  public int getSubredditSubscribers(){
-	return subredditSubscribers;
-  }
+	public SecureMediaEmbed getSecureMediaEmbed(){
+		return secureMediaEmbed;
+	}
 
-  public Object getDistinguished(){
-	return distinguished;
-  }
+	public Object getLinkFlairText(){
+		return linkFlairText;
+	}
 
-  public Object getRemovedByCategory(){
-	return removedByCategory;
-  }
+	public String getSubredditType(){
+		return subredditType;
+	}
 
-  public int getThumbnailHeight(){
-	return thumbnailHeight;
-  }
+	public boolean isIsMeta(){
+		return isMeta;
+	}
 
-  public String getLinkFlairType(){
-	return linkFlairType;
-  }
+	public int getSubredditSubscribers(){
+		return subredditSubscribers;
+	}
 
-  public List<AllAwardingsItem> getAllAwardings(){
-	return allAwardings;
-  }
+	public Object getDistinguished(){
+		return distinguished;
+	}
 
-  public boolean isVisited(){
-	return visited;
-  }
+	public Object getRemovedByCategory(){
+		return removedByCategory;
+	}
 
-  public int getPwls(){
-	return pwls;
-  }
+	public int getThumbnailHeight(){
+		return thumbnailHeight;
+	}
 
-  public Object getCategory(){
-	return category;
-  }
+	public String getLinkFlairType(){
+		return linkFlairType;
+	}
 
-  public Object getBannedBy(){
-	return bannedBy;
-  }
+	public List<AllAwardingsItem> getAllAwardings(){
+		return allAwardings;
+	}
 
-  public boolean isContestMode(){
-	return contestMode;
-  }
+	public boolean isVisited(){
+		return visited;
+	}
 
-  public boolean isIsRedditMediaDomain(){
-	return isRedditMediaDomain;
-  }
+	public int getPwls(){
+		return pwls;
+	}
+
+	public Object getCategory(){
+		return category;
+	}
+
+	public Object getBannedBy(){
+		return bannedBy;
+	}
+
+	public boolean isContestMode(){
+		return contestMode;
+	}
+
+	public boolean isIsRedditMediaDomain(){
+		return isRedditMediaDomain;
+	}
 }
