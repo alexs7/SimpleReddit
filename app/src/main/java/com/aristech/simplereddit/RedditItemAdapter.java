@@ -47,7 +47,7 @@ public class RedditItemAdapter extends PagedListAdapter<ChildrenItem, RedditItem
 	  // use .url to get the gif
 	  if(item.getData().getDomain().equals("i.redd.it")){
 		Glide.with(holder.imageViewGIF.getContext())
-				.load("https://i.redd.it/1owkm5r3wi561.gif").diskCacheStrategy(DiskCacheStrategy.ALL)
+				.load(item.getData().getThumbnail())
 				.into(holder.imageViewGIF);
 	  }
 
